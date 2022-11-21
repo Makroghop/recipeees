@@ -49,6 +49,8 @@ function addMeal(mealData, random = false) {
 
   const meal_elem = document.createElement("div");
   meal_elem.classList.add("meal");
+
+  meal_elem.innerHTML = `loading....`;
   meal_elem.innerHTML = `
 				<div class="meal_header">
                       ${
@@ -137,7 +139,7 @@ function addToFav(mealData) {
   const favMeal = document.createElement("li");
   //	favMeal.classList.add("fav_meals");
 
-  favMeal.innerHTML = ``;
+  favMeal.innerHTML = `loading....`;
   favMeal.innerHTML = `
         <img
             src="${mealData.strMealThumb}"
@@ -187,6 +189,7 @@ function updateMealInfos(mealData) {
 			}
 		}
 	*/
+  meal_info.innerHTML = `loading....`;
   meal_info.innerHTML = `
 				<h1>${mealData.strMeal}</h1>
 				<img src="${mealData.strMealThumb}" alt="${mealData}">

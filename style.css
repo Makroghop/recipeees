@@ -18,7 +18,10 @@ body {
 img {
   max-width: 100%;
 }
-
+form {
+  display: flex;
+  width: 100%;
+}
 .container {
   position: relative;
   width: 90%;
@@ -194,15 +197,17 @@ img {
   overflow: auto;
   max-height: 100vh;
   max-width: 600px;
+
   width: 100%;
 }
 
 .popup .close_popup {
-  background-color: transparent;
+  background-color: rgb(158, 255, 207);
+  padding: 12px 12px;
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
 }
