@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipeeeeees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <form id="form" autocomplete="off">
+          <input type="search" name="search" id="search" style="width: 100%" />
+          <button class="search" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </header>
+      <div class="fav_container">
+        <h3>Favorite Meals</h3>
+        <ul class="fav_meals" id="fav_meals"></ul>
+      </div>
+      <div class="meals" id="meals"></div>
+    </div>
+
+    <div class="popup_container hidden" id="meal_popup">
+      <div class="popup">
+        <button id="close_popup" class="close_popup">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="meal_info" id="meal_info"></div>
+      </div>
+    </div>
+  </body>
+</html>
